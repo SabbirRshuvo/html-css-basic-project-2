@@ -7,60 +7,60 @@ body{
     background-color: #ccc;
 }
 .container{
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
 }
-.applied-box{
-    margin-top: 50px;
+.apply_box{
+    max-width: 600px;
+    padding: 20px;
     background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
     border-radius: 10px;
 }
-.heading{
-    font-style: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.heading h2{
-    font-size: 30px;
-}
-.heading span{
-    font-size: 20px;
-    margin-left: 5px;
-}
-.form-variant{
+.form_container{
+    margin-top: 20px;
     display: grid;
-    grid-template-columns: 1fr 1fr;;
-    margin: 0 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
-.form-variant  label{
-    font-size: large;
-    cursor: pointer;
+.form_control{
+    display: flex;
+    flex-direction: column;
 }
-.form-variant input{
-    margin: 5px 5px;
-    padding: 5px;
-    border-radius: 5px;
+label{
+    font-size: 15px;
+    margin-bottom: 5px;
 }
-.form-variant label, select{
-    font-size: 16px;
-    border-radius: 5px;
-    padding: 2px;
+input, select, textarea{
+    padding: 6px 10px;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 15px;
 }
-.form-variant textarea{
-    margin-top: 15px;
-    padding: 15px;
-    border-radius: 15px;
+input:focus{
+    outline-color: red;
 }
-.button{
-    text-align: end;
-    margin-right: 10px;
-    padding-bottom: 10px;
+.button_container{
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
 }
-.button button{
-    padding: 5px;
-    border-radius: 5px;
-    background-color: green;
+button{
+    background-color: red;
+    border: transparent solid 2px;
+    padding: 5px 10px;
     color: white;
+    border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s ease-in;
+}
+
+
+button:hover{
+    background-color: gray;
+    border: 2px solid red;
+    color: black;
+    transition: 0.3 ease-out;
 }
